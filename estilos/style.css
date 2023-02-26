@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+*{ /*Resete total do proejto.*/
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100wh;
+    background-color: black;
+}
+
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover; /*Para o fundo cobrir a tela interira.*/
+    background-attachment: fixed; /*Para o fundo ficar fixo.*/
+}
+
+main{
+    height: 100vh;
+    position: relative; /*Para poder organizar a centralização das coisas que vão na frente do main.*/
+}
+
+section#telefone{
+    position: absolute; /*Aqui dá a possibilidade de centralizar o elemento.*/
+    top: 50%; /*Posicionando o elemento*/
+    left: 50%; /*Posicionando o elemento*/
+    transform: translate(-50%, -50%); /*Centraliza o objeto.*/
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
+
+section#redes-sociais{
+    height: 500px;
+    width: 500px;
+    background-color: blueviolet;
+}
