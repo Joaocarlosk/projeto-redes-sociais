@@ -43,7 +43,20 @@ iframe#tela{ /*Para deixar a tela com a imagem total tenho que ir lá no home.ht
 }
 
 section#redes-sociais{
-    height: 500px;
-    width: 500px;
-    background-color: blueviolet;
+    text-align: right; /*Para trocar os ícones do lado esquerdo para o lado direito.*/
+}
+
+section#redes-sociais img{ /*Configurando as imagens dentro da section e dos links.*/
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*Deixa as imagens redondas.*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473); /*Cria uma sombra.*/
+    box-sizing: border-box; /*Para fazer a borda fazer parte da imagem e deixar o efeito do hover melhor.*/
+}
+
+section#redes-sociais img:hover{ /*Para das os efeitos nos botões.*/
+    border: 2px solid rgba(255, 255, 255, 0.61);
+    transform: translate(-3px, -3px); /*Movimento do botão quando passa o mouse.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534); /*Movimento da sombra.*/
+    transition: transform 0.5s, border 1s; /*1º parâmetro para modificar o tempo de movimentação da imagem e o 2º para modificar o tempo de movimentação da borda*/
 }
